@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanatani Diya - Traditional feeling with modern technology. USB powered LED diyas.">
+  <meta name="theme-color" content="#7c1f24">
+  <title>Sanatani Diya | Traditional Feeling with Modern Technology</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">✨ Light up your home with positivity • Safe • Eco Friendly • 1 Year Warranty</div>
+
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Sanatani Diya home">
+      <span class="flame">🪔</span>
+      <span><strong>Sanatani</strong> <b>Diya</b><small>Traditional Feeling with Modern Technology</small></span>
+    </a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cart-btn" href="#products">Shop Now</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TRADITION • TECHNOLOGY • POSITIVITY</p>
+        <h1>Light up your home with <em>positivity.</em></h1>
+        <p class="hero-text">Beautiful traditional-style LED diyas with a realistic flickering glow — USB powered, smoke-free and oil-free. Perfect for festivals, pooja, décor and gifting.</p>
+        <div class="actions">
+          <a class="btn primary" href="#products">Explore Diya Series</a>
+          <a class="btn whatsapp" id="heroWhatsApp" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+        </div>
+        <div class="trust"><span>✓ 5V USB</span><span>✓ Flickering Glow</span><span>✓ No Open Flame</span><span>✓ 1 Year Warranty</span></div>
+      </div>
+      <div class="hero-image"><img src="assets/sanatani-diya-banner.jpg" alt="Sanatani Diya product collection"></div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <div><p class="eyebrow">OUR COLLECTION</p><h2>Choose your Diya Series</h2></div>
+        <p>Orange and Yellow colour options</p>
+      </div>
+      <div class="products" id="productsGrid"></div>
+    </section>
+
+    <section class="features" id="features">
+      <article><div class="feature-icon">🔌</div><h3>5V DC USB</h3><p>A-Type USB charger / power bank compatible.</p></article>
+      <article><div class="feature-icon">🔥</div><h3>Flickering Glow</h3><p>Realistic diya-style flickering light effect.</p></article>
+      <article><div class="feature-icon">🌿</div><h3>Eco Friendly</h3><p>Smoke-free and oil-free lighting experience.</p></article>
+      <article><div class="feature-icon">🐾</div><h3>Kids & Pet Friendly</h3><p>No open flame and no oil handling.</p></article>
+      <article><div class="feature-icon">🛡️</div><h3>1 Year Warranty</h3><p>Peace of mind with warranty support.</p></article>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">SANATANI DIYA</p>
+        <h2>Tradition that fits modern homes.</h2>
+        <p>Enjoy the look and warmth of traditional diyas with the convenience of modern LED technology. Use them for Diwali, pooja rooms, festive decoration, gifting and everyday positivity.</p>
+        <div class="check-list"><span>✓ USB powered</span><span>✓ Reusable</span><span>✓ Smoke & oil free</span><span>✓ Easy to operate</span></div>
+      </div>
+      <div class="made-india"><div class="india">🇮🇳</div><strong>Made in India</strong><p>Mfg. by <b>SHAMCO Creations</b><br>Mumbai, India</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">QUESTIONS OR BULK ORDERS?</p><h2>Order directly on WhatsApp</h2><p>Tell us your series, colour and quantity. Courier charges are applicable.</p></div>
+      <a class="btn whatsapp big" id="contactWhatsApp" target="_blank" rel="noopener">💬 WhatsApp: +91 9870 832147</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Sanatani Diya™</strong><br><small>Traditional Feeling with Modern Technology</small></div>
+    <div>Manufactured by <strong>SHAMCO Creations</strong> • Mumbai, India</div>
+    <div>© <span id="year"></span> Sanatani Diya</div>
+  </footer>
+
+  <div class="modal hidden" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <p class="eyebrow">QUICK ORDER</p>
+      <h2 id="modalTitle">Order Sanatani Diya</h2>
+      <p id="modalSummary" class="summary"></p>
+      <form id="orderForm">
+        <label>Full Name<input name="name" required placeholder="Your name"></label>
+        <label>Mobile Number<input name="phone" required inputmode="tel" placeholder="10 digit mobile number"></label>
+        <label>City / PIN Code<input name="location" required placeholder="Mumbai - 400001"></label>
+        <label>Quantity<input name="quantity" type="number" min="1" max="100" value="1" required></label>
+        <div class="modal-actions">
+          <button class="btn whatsapp" type="submit">Continue on WhatsApp</button>
+          <button class="btn outline" type="button" id="paymentButton">Pay Online</button>
+        </div>
+        <p class="note">Online payment opens your configured payment link. See <b>config.js</b> to add Razorpay Payment Links.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
